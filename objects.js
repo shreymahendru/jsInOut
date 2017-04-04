@@ -126,9 +126,9 @@ function Dog(name, color) {
 }
 Dog.prototype = Object.create(Animal.prototype);
 var paddy = new Dog('Paddy', 'brown');
-let s = paddy.speak;
+paddy.speak();
 //s = s.bind(paddy);
-s();  
+// s();  
 
 // What I was doing there was creating classes typ inhertance 
 // more syntactic sugar
@@ -153,7 +153,3 @@ class DogClass extends AnimalClass{
 let dog = new DogClass('dog', 'black');
 dog.speak();
 console.log(dog)
-
-
-
-
